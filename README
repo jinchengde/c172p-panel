@@ -1,0 +1,33 @@
+关于本程序
+	c172p-panel是一个简单的图形化仪表盘模拟器.程序可以运行在性能比较低的计算
+	机上.这样就可以实现一台计算机运行fgfs,并显示3D画面,另外一台低性能计算机
+	显示仪表盘,并设置部分参数.
+
+关于编译:
+	源代码是用QtCreator创建的.因此代码"严重"依赖QT库,并且使用QtCreator导入和
+	编译代码是最容易和方便的.
+
+如何运行:
+	1,将fg目录下的c172p-panel-*.xml文件拷贝到$FG_ROOT/Protocol目录下.
+	2,启动fgfs,并增加如下命令行参数:
+		--generic=socket,out,20,<ip-address>,5500,udp,c172p-panel-out
+		--generic=socket,in,20,<ip-address>,5501,udp,c172p-panel-in
+	3,运行本程序(命令行选项可以通过-h查看).
+
+============================================
+About the program
+	c172p-panel is a simple graphical instrument panel simulator. If you
+	want to display the 3D scenary on one machine and the panel on another
+	machine with low performance, this program is your choice.
+
+About compilation:
+	The source code and UI are created and managed with QtCreator, so the
+	source code depends heavily on QT library, and the easiest way to
+	compile the source code is using QtCreator.
+	
+How to run:
+	1, Copy the fs/c172p-panel-*.xml file into $FG_ROOT/Protocol/.
+	2, Start fgfs with the following argument:
+		--generic=socket,out,20,<ip-address>,5500,udp,c172p-panel-out
+		--generic=socket,in,20,<ip-address>,5501,udp,c172p-panel-in
+	3, Start c172p-panel (use -h to see help on cli options).

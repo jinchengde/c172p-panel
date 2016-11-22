@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Cessna 172P Panel</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(86, 86, 86);</string>
+   </property>
+   <widget class="AirSpeedIndicator" name="asi" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>300</width>
+      <height>300</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="AttitudeIndicator" name="ai" native="true">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>0</y>
+      <width>300</width>
+      <height>300</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="AltitudeIndicator" name="alt" native="true">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>0</y>
+      <width>300</width>
+      <height>300</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="NavigationIndicator" name="nav1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>0</y>
+      <width>300</width>
+      <height>300</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="TurnSlipIndicator" name="tsi" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>300</y>
+      <width>300</width>
+      <height>300</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="HeadingIndicator" name="hi" native="true">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>300</y>
+      <width>300</width>
+      <height>300</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="VerticalSpeedIndicator" name="vsi" native="true">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>300</y>
+      <width>300</width>
+      <height>300</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="NavigationIndicator" name="nav2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>300</y>
+      <width>300</width>
+      <height>300</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="RPM" name="rpm" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>600</y>
+      <width>150</width>
+      <height>150</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="Radio" name="radio_c1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>600</y>
+      <width>300</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="Radio" name="radio_c2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>660</y>
+      <width>300</width>
+      <height>60</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="Radio" name="radio_n1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>600</y>
+      <width>300</width>
+      <height>60</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="Radio" name="radio_n2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>660</y>
+      <width>300</width>
+      <height>60</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="DME" name="dme" native="true">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>600</y>
+      <width>300</width>
+      <height>60</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>AttitudeIndicator</class>
+   <extends>QWidget</extends>
+   <header>attitudeindicator.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AltitudeIndicator</class>
+   <extends>QWidget</extends>
+   <header>altitudeindicator.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AirSpeedIndicator</class>
+   <extends>QWidget</extends>
+   <header>airspeedindicator.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>HeadingIndicator</class>
+   <extends>QWidget</extends>
+   <header>headingindicator.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>NavigationIndicator</class>
+   <extends>QWidget</extends>
+   <header>navigationindicator.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TurnSlipIndicator</class>
+   <extends>QWidget</extends>
+   <header>turnslipindicator.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>VerticalSpeedIndicator</class>
+   <extends>QWidget</extends>
+   <header>verticalspeedindicator.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>RPM</class>
+   <extends>QWidget</extends>
+   <header>rpm.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Radio</class>
+   <extends>QWidget</extends>
+   <header>radio.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DME</class>
+   <extends>QWidget</extends>
+   <header>dme.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
