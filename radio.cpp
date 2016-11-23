@@ -62,6 +62,8 @@ void Radio::paintEvent(QPaintEvent *)
     painter.setPen(pen);
     QFont f = painter.font();
     f.setBold(true);
+    f.setStyleHint(QFont::Monospace);
+    f.setFamily("Monospace");
     f.setPixelSize(25);
     painter.setFont(f);
     painter.setBrush(brush);

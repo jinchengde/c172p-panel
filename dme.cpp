@@ -55,6 +55,8 @@ void DME::paintEvent(QPaintEvent *)
     painter.setPen(pen);
     QFont f = painter.font();
     f.setBold(true);
+    f.setStyleHint(QFont::Monospace);
+    f.setFamily("Monospace");
     f.setPixelSize(20);
     painter.setFont(f);
     painter.setBrush(brush);
