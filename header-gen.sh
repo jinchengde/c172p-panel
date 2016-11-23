@@ -5,12 +5,18 @@ if [[ -z "$1" || -z "$2" ]]; then
 	exit 1;
 fi
 
+invalid=no;
+
 {
 	if ! grep 'input' $1 || ! grep 'output' $2; then
-		echo 'The two files seem not valid'
-		exit 2;
+		invalid=yes;
 	fi
 } > /dev/null
+
+if [[ "$invalid" == 'yes' ]]; then
+	echo Invalid input files.
+	exit 2;
+fi
 
 tmp_file='/tmp/datanames.tmp'
 in_names=`grep '<name>' $1 | sed -r -e 's/<[^<]*>//g' -e 's/\s//g' | tee $tmp_file`
