@@ -53,4 +53,30 @@ DISTFILES += \
     README \
     fg/c172p-panel-in.xml \
     fg/c172p-panel-out.xml \
-    header-gen.sh
+    header-gen.sh \
+    images/ai/ai-horizon2.png \
+    images/ai/ai-horizon3.png \
+    images/ai/ai-plane.png \
+    images/ai/k-ai-offset.png \
+    images/alt/alt-inhg.png \
+    images/alt/alt-plate.png \
+    images/alt/k-alt-inhg.png \
+    images/asi/asi-plate.png \
+    images/common/frame.png \
+    images/hi/hi-plane.png \
+    images/hi/hi-plate.png \
+    images/hi/k-hi-bug.png \
+    images/hi/k-hi-head.png \
+    images/radio/k-khz.png \
+    images/radio/k-mhz.png \
+    images/radio/k-vol.png \
+    images/rpm/rpm-plate.png \
+    images/tsi/tsi-plane.png \
+    images/tsi/tsi-plate.png \
+    images/vor/k-vor-obs.png \
+    images/vor/vor-gs-flag.png \
+    images/vor/vor-plate.png \
+    images/vor/vor-ring.png \
+    images/vor/vor-to-from-flag.png \
+    images/vsi/vsi-plate.png \
+    images/vsi/vsi-plate1.png
